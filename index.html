@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+ float:left;
+  width: 100%;
+  height: 50px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav span {
+  list-style-type: none;
+  font-size:20px;
+  padding: 100;
+  margin:50px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+img {
+height: 110px;
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+
+</style>
+
+
+<body>
+    
+       <nav>
+        <span id="lausail">Lausail</span>
+        <span id="Pearl">Pearl</span>
+        <span id="thuamana">Al thaumana</span>
+       </nav>
+       
+
+
+<footer>
+<article id="div1">
+
+<h1 id="heading"></h1>
+
+<p id="para"></p>
+<p id="para1"></p>
+
+
+<div id="x" style="height: 180px;">
+
+<img src="" alt="">
+</div>
+
+</div>
+
+</article>
+<p>if you are interested please fill the form</p>
+<form action="connection.php" method="post">
+<label for="Name">Name:</label>
+<input type="text" id="Name" name="Name">
+<br>
+<label for="Telephone" id="Telephone" Name="Telephone">Telephone:</label>
+<input type="tel">
+<br>
+<label for="City" id="City" name="City">City:</label>
+<select>
+    <option value="">Al wakhra</option>
+    <option value="">Al thamana</option>
+    <option value="">Al lausail</option>
+</select>
+<br>
+<input type="submit">
+</form>
+</footer>
+
+       
+   
+<script src="scripting.js"></script>  
+</body>
+
+
+
+</html>
